@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Xinia 1.0</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css' ) }}">        
+	</head>
+	<body>
+	<div class="body"></div>
+		<div class="grad"></div>
+		<div class="header">
+			<div>Xinia <span>1.0</span></div>
+		</div>
+		<br>
+		<div class="login">
+			<form action="/program" method="POST" enctype="multipart/form-data">
+				<input type="text" placeholder="username" name="user"><br>
+				<input type="password" placeholder="password" name="password"><br>
+				<input type="submit" value="Login">
+			</form>
+		</div>
+	</body>
+</html>
