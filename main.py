@@ -7,5 +7,13 @@ DEBUG = False
 def main():
     return render_template('index.html')
 
+@app.route("/content")
+def view_content():
+    return render_template("content.html", title="Contenidos")
+
+@app.route("/contacto")
+def view_contacto():
+    return render_template("content.html", title="Contacto")
+
 if __name__ == "__main__":
     app.run(port = PORT, debug = DEBUG)
